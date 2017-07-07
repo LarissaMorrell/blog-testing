@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: Cmkc8+k1bY8D2mnEzobnxIb7+CV7XrtaOd50LJKFgWzJlPHsQm3RqTfW7vXQ2a6FQFhHX7kiZkwQsO5qdTey2dYESy3VdqyD3sdCPWbn0ZdMN3ty599GA7oeQiZktFRzURueMycm351OGvgiGHm2IBy4UBKJTmy9UdshRgXQfX3tnsiafnh46fXWB1aqOB+ZLmpPs4b/nvTn4lDOC0ZXTuyEn9O3TGcQyxluhSbdjjQEyniNQ+2qJHw/wv1J7a1M4grTaGbVH2ls9xAY/JGhlnHOtlR7O41hSef9zkwQ6uXMGCdptSMpQ74U1/6YV3P0fh7lGSmoNsI03EyoZVhCri6+gD1/LDLnuGk+wcr7AgZ0qGib1vwJ0IrLHQZVjEeFG5cE/L9QEXKpF2I13Kz/rAb3ZjXk6KPpQqnZfgsOBlEh8t29J6zxlTvNRAFauee+UB8JojSIrYl5im/bWt8mJo+f6/1TykQu5epO5CPF31GEJ1Sg0S7NowWvFzLNxtks/RWbiXHR+1R2xVCcNyatKszNhp9KJjKgNgzjsXETNcWcrc8r4Hx0D6HhI8ynSW4hTPifGFpWuhGTrDlv91wWo/pJZFSzlDkyHpqrnHnMhGXdxsvgfcx5D4O8PD0WOucCdw94k10+GRMtRHDKvNLBDMHI8pHs+Deu90la22M7Jc4=
+  app: blog-testing
+  on:
+    repo: LarissaMorrell/blog-testing
