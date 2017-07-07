@@ -70,7 +70,6 @@ describe('Blog Post API resource', function() {
                 .then(function(_res) {
                     res = _res;
                     res.should.have.status(200);
-                    // console.log('\n\n\n\n\nbody:\n', res.body);
                     res.body.should.have.length.of.at.least(1);
                     return BlogPost.count();
                 })
@@ -137,9 +136,6 @@ describe('Blog Post API resource', function() {
                 .then(function(post){
                     post.title.should.equal(newPost.title);
                     post.content.should.equal(newPost.content);
-
-                    console.log('post.author', post.author);
-                    console.log('newPost.author', newPost.author);
                     post.author.firstName.should.equal(newPost.author.firstName);
                     post.author.lastName.should.equal(newPost.author.lastName);
                     //created
